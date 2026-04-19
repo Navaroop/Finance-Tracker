@@ -1,0 +1,142 @@
+/* ── Month Selector ───────────────────────── */
+.month-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  background: var(--surface);
+  padding: 12px 18px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-sm);
+  width: fit-content;
+}
+.month-selector label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.month-selector select {
+  padding: 8px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 13.5px;
+  background: var(--surface-2);
+  outline: none;
+  transition: border-color var(--transition);
+}
+.month-selector select:focus { border-color: var(--primary); }
+
+/* ── Budget Grid ──────────────────────────── */
+.budget-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+/* ── Budget Card ──────────────────────────── */
+.budget-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.budget-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.budget-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.budget-cat-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.budget-cat-icon {
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+.budget-cat-name { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+.budget-cat-period { font-size: 11.5px; color: var(--text-muted); margin-top: 1px; }
+.budget-card-actions { display: flex; gap: 4px; }
+
+.budget-amounts {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.budget-spent {
+  font-size: 22px;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  letter-spacing: -.02em;
+}
+.budget-limit {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.budget-progress-bar {
+  height: 10px;
+  background: var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.budget-progress-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width .6s ease;
+}
+.budget-pct {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+/* ── Add Budget card (placeholder) ───────── */
+.budget-add-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  border: 2px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 160px;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+}
+.budget-add-card:hover { border-color: var(--primary); background: var(--primary-light); }
+.budget-add-icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+}
+.budget-add-card:hover .budget-add-icon { background: var(--primary); color: #fff; }
+.budget-add-label { font-size: 14px; font-weight: 600; color: var(--text-secondary); }
+.budget-add-card:hover .budget-add-label { color: var(--primary); }

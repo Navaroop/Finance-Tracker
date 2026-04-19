@@ -1,0 +1,19 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+.env
+
+# Java/Spring Boot
+target/
+*.jar
+*.war
+*.log
+.settings/
+.classpath
+.project
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
