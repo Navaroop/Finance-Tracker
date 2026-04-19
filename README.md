@@ -124,12 +124,13 @@ App opens at **http://localhost:3000**
 
 - ✅ **JWT Authentication** — Secure register/login, auto-logout on 401
 - ✅ **Income & Expense Tracking** — Full CRUD with type toggle
-- ✅ **Advanced Filters** — Search, type, category, date range
-- ✅ **Budget Limits** — Per-category monthly budgets with real spent tracking
-- ✅ **Dashboard** — Summary cards, spending trend chart, category breakdown
-- ✅ **Light Theme** — Clean purple-accent UI inspired by Creditly dashboard
-- ✅ **Responsive** — Works on desktop and tablet
-
+- ✅ **Smart Insights Engine** — AI-like intelligent dashboard widgets displaying month-over-month variance, highest expense vectors, and overall budget health.
+- ✅ **Recurring Transactions Engine** — Spring `@Scheduled` background job automatically generates scheduled standing-order transactions overnight.
+- ✅ **Real-Time Budget Alerts** — Integrated Toast notifications proactively warning users when category spending breaches 80% or 100% capacity.
+- ✅ **Advanced Filters** — Search, type, category, and intelligent Year-To-Date date range mapping.
+- ✅ **Budget Limits** — Per-category monthly budgets dynamically integrated against active expenditures.
+- ✅ **Dual-Theme Support (Dark/Light)** — Native CSS-variable driven UI that hot-swaps between themes instantly, with user preference persisted in local storage.
+- ✅ **Responsive Design** — Fully optimized for desktop, tablet, and mobile viewing.
 ---
 
 ## 🛠️ Tech Stack
